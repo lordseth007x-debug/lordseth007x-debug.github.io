@@ -1,0 +1,8 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lord seth4 – Produkte, die ich selbst empfehle</title><link rel="icon" href="img/logo.svg"><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><header><a href="index.html"><img src="img/logo.svg" alt="Lord seth4 Logo"></a><b>Lord seth4</b></header></div>
+<main class="wrap"><section class="hero"><h1>Produkte, die ich selbst empfehle.</h1><p>Meine Favoriten aus dem TikTok Shop – getestet und vorgestellt auf <a href="https://www.tiktok.com/@lordseth4">@lordseth4</a>.</p></section>
+<div class="notice"><b>Werbung / Affiliate-Links:</b> Die Links auf dieser Seite sind Affiliate-Links zum TikTok Shop. Kaufst du darüber, erhalte ich eine Provision – für dich ändert sich der Preis nicht.</div>
+<div class="grid" id="grid"></div></main>
+<script>
+fetch('products.json').then(r=>r.json()).then(ps=>{const g=document.getElementById('grid');ps.forEach(p=>{const c=document.createElement('article');c.className='card';c.innerHTML='<img loading="lazy" alt=""><div><h3></h3><p></p><a class="btn" target="_blank" rel="sponsored noopener">Auf TikTok ansehen</a></div>';c.querySelector('img').src=p.bild;c.querySelector('img').alt=p.name;c.querySelector('h3').textContent=p.name;c.querySelector('p').textContent=p.beschreibung;c.querySelector('a').href=p.link;g.appendChild(c)})});
+</script>
+<footer><div class="wrap"><span>© 2026 Lord seth4 · Tel. <a href="tel:+4915679309931">0156 79309931</a></span><span><a href="index.html">Start</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span></div></footer></body></html>
